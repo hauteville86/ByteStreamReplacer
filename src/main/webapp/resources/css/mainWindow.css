@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+.inputFromFile {
+	color: grey;
+}
+
+.inputByHand {
+	color: grey;
+}
+
+.inputNumeric {
+	color: grey;
+}
+
+#fromFileRadio {
+	checked: true;
+}
