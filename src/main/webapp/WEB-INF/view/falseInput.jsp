@@ -9,7 +9,7 @@
 <title>Byte Stream Replacer</title>
 </head>
 <body>
-	Podano błędny ciąg bajtów.
+	Podano błędne dane wejściowe.
 	<br>
 	<a href="/return">Powrót</a>
 </body>
