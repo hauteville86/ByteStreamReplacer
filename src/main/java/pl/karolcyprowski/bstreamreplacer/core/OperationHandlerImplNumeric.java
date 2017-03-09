@@ -10,20 +10,23 @@ public class OperationHandlerImplNumeric extends OperationHandlerImpl {
 	@Override
 	protected void loadSearchAndReplaceByteArrays()
 	{
-		int[] sourceForArrayA = getProxyObject().getNumericA();
-		byte[] bytesA = new byte[sourceForArrayA.length];
-		for(int i = 0; i < sourceForArrayA.length; i++)
+		if(getA() == null && getB() == null)
 		{
-			bytesA[i] = (byte)(sourceForArrayA[i]);
-		}
-		setA(bytesA);
-		int[] sourceForArrayB = getProxyObject().getNumericB();
-		byte[] bytesB = new byte[sourceForArrayB.length];
-		for(int i = 0; i < sourceForArrayB.length; i++)
-		{
-			bytesB[i] = (byte)(sourceForArrayB[i]);
-		}
-		setB(bytesB);
+			int[] sourceForArrayA = getProxyObject().getNumericA();
+			byte[] bytesA = new byte[sourceForArrayA.length];
+			for(int i = 0; i < sourceForArrayA.length; i++)
+			{
+				bytesA[i] = (byte)(sourceForArrayA[i]);
+			}
+			setA(bytesA);
+			int[] sourceForArrayB = getProxyObject().getNumericB();
+			byte[] bytesB = new byte[sourceForArrayB.length];
+			for(int i = 0; i < sourceForArrayB.length; i++)
+			{
+				bytesB[i] = (byte)(sourceForArrayB[i]);
+			}
+			setB(bytesB);
+		}		
 	}
 
 }

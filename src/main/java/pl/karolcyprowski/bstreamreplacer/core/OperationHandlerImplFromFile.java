@@ -29,8 +29,12 @@ public class OperationHandlerImplFromFile extends OperationHandlerImpl {
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				setA(new byte[0]);
+				setB(new byte[0]);
 			} catch (IOException e) {
 				e.printStackTrace();
+				setA(new byte[0]);
+				setB(new byte[0]);
 			}
 		}		
 	}
