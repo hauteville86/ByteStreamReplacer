@@ -20,12 +20,20 @@ public class OperationHandlerImplNumeric extends OperationHandlerImpl {
 			}
 			setA(bytesA);
 			int[] sourceForArrayB = getProxyObject().getNumericB();
-			byte[] bytesB = new byte[sourceForArrayB.length];
-			for(int i = 0; i < sourceForArrayB.length; i++)
+			if(sourceForArrayB != null)
 			{
-				bytesB[i] = (byte)(sourceForArrayB[i]);
+				byte[] bytesB = new byte[sourceForArrayB.length];
+				for(int i = 0; i < sourceForArrayB.length; i++)
+				{
+					bytesB[i] = (byte)(sourceForArrayB[i]);
+				}
+				setB(bytesB);
 			}
-			setB(bytesB);
+			else
+			{
+				setB(new byte[0]);
+			}
+			
 		}		
 	}
 

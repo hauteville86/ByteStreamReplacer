@@ -50,7 +50,7 @@ public class OperationHandlerImpl implements OperationHandler {
 				String fileExtension = getFileExtension(baseFile);
 				if (fileExtension.equals(proxyObject.getExtension())) {
 					loadSearchAndReplaceByteArrays();
-					if(getA().length > 0 && getB().length > 0)
+					if(getA().length > 0)
 					{
 						int counter = runSearchAndReplaceOperation(baseFile);
 						if (counter > 0) {

@@ -13,7 +13,15 @@ public class OperationHandlerImplByHand extends OperationHandlerImpl {
 		String sourceForArrayA = getProxyObject().getInputByHandA();
 		setA(sourceForArrayA.getBytes());
 		String sourceForArrayB = getProxyObject().getInputByHandB();
-		setB(sourceForArrayB.getBytes());	
+		if(sourceForArrayB != null)
+		{
+			setB(sourceForArrayB.getBytes());	
+		}
+		else
+		{
+			setB(new byte[0]);
+		}
+		
 	}
 	
 	
