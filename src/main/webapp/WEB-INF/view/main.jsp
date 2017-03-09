@@ -26,7 +26,7 @@
 		<h4 class="inputNumeric">${streamAName} ${numeric}</h4> <form:input type="text" id="streamANameNumeric" path="numericA" disabled="true"/>
 		<h4 class="inputNumeric">${streamBName} ${numeric}</h4> <form:input type="text" id="streamBNameNumeric" path="numericB" disabled="true"/>
 		<br>		
-		<input type="submit" value="Submit" >
+		<input type="submit" value="Zamień" >
 	</form:form>
 	<script src="resources/js/mainWindow.js"></script>
 </body>
