@@ -20,4 +20,6 @@ public class ByteStreamReplacerConstants {
 	
 	public static final String NUMERIC_PL = "Numerycznie (bajty po przecinku)";
 
+	public static final Object SUBMIT_PL = "Zamień";
+
 }

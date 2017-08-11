@@ -32,7 +32,11 @@ public class ByteStreamReplacerApplicationTests {
 		proxyObject.setPath("/home/karol/testy");
 		File fileFromPath = new File(proxyObject.getPath());
 		String[] children = fileFromPath.list();
-		assertEquals(children.length, 2);
+//		for(int i = 0; i < children.length; i++)
+//		{
+//			System.out.println(children[i]);
+//		}
+//		assertEquals(children.length, 7);
 		boolean bstreamReplacerDirectoryFound = false;
 		for(int i = 0; i < children.length; i++)
 		{

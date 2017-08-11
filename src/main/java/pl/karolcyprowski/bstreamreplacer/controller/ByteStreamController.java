@@ -43,6 +43,7 @@ public class ByteStreamController{
 		model.addAttribute("byHand", ByteStreamReplacerConstants.BY_HAND_PL);
 		model.addAttribute("fromFile", ByteStreamReplacerConstants.FROM_FILE_PL);
 		model.addAttribute("numeric", ByteStreamReplacerConstants.NUMERIC_PL);
+		model.addAttribute("submit", ByteStreamReplacerConstants.SUBMIT_PL);
 		model.addAttribute("operationProxyObject", new OperationProxyObject());
 		return "main";
 	}
